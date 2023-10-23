@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PIJAMAstore</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="style.css">
+  </head> 
+  <body>
+     <header class="cabecalho">
+      <div class="container">
+
+        
+        </ul>
+         <img src="img/pngtree-salon-logo-png-image_4553686.png" alt=PIJAMAstore class="container__imagem">
+      </div>
+      <div class="container">
+         
+         <a href="#"><img src="img/Compras.svg" alt="carrinhos de compras"class="container__imagem"></a>
+         <a href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fwww.google.com%2F&ec=GAZAmgQ&hl=pt-BR&ifkv=AVQVeyxpje1IkD5AgWeRo7ljBGwe3UAE8RIWMLruzpYJgYO0yBmdv-k9CqbSpygtn8LeBi1EXgra&passive=true&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S-1459210380%3A1697638371022651&theme=glif"><img src="img/Usuario.svg" alt="Meu perfil "class="container__imagem"></a>
+      </div>
+     </header>
+     
+     <section class="carrosel">
+      <h2 class="carrosel__titulo">ofertas do mês</h2>
+      <!-- Slider main container -->
+    <div class="swiper">
+    <!-- Additional required wrapper -->
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+    
+    <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide"><img src="img/pijama2.jpeg" alt="Livro sobre portugol"></div>
+    <div class="swiper-slide"><img src="img/pijamaLongo.jpeg" alt="Livro sobre liderança em Design alura books"></div>
+    <div class="swiper-slide"><img src="img/pijamaVaca.jpeg" alt="livro sobre java script"></div>
+    <div class="swiper-slide"><img src="img/o.jpeg" alt="Livro guia front"></div>
+    <div class="swiper-slide"><img src="img/índice.jpeg" alt="Livro sobre ApacheKafka"></div>
+    </div>
+    <section class="banner">
+      <h2 class="banner__titulo">Adicione os seus favoritos ao carrinho</h2>
+      <p class="banner__texto">compre com segurança e agilidade</p>
+      <input type="search" class="banner__pesquisa" placeholder="o que você procura?">
+     </section>
+    
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+    
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+    </div>
+
+    <div class="card">
+        <!--1° linha -->
+      <div class="card__descricao">
+        <!--1° coluna-->
+        <div class="descricao">
+          <h3 class="descricao__titulo"> Pijama em promoção</h3>
+          <h2 class="descricao__titulo-livro">R$ 99,90</h2>
+          <p class="descricao__texto">Ultimo dia de promoção, aproveite!</p>
+        </div>
+        <!--2° coluna-->
+        <img src="img/pijama2.jpeg" class="descricao__imagem">
+      </div>
+      <!--2° linha-->
+     
+        <!--2° coluna-->
+        <a href="#" class="botoes__ancora"> adicionar ao carrinho</a>
+      </div>
+    </div>
+    <div class="card">
+      <!--1° linha -->
+    <div class="card__descricao">
+      <!--1° coluna-->
+      <div class="descricao">
+        <h3 class="descricao__titulo"> Pijama em promoção</h3>
+        <h2 class="descricao__titulo-livro">R$ 59,90</h2>
+        <p class="descricao__texto">ultimo em estoque</p>
+      </div>
+      <!--2° coluna-->
+      <img src="img/pijamaLongo.jpeg" class="descricao__imagem">
+    </div>
+    <!--2° linha-->
+   
+      <!--2° coluna-->
+      <a href="#" class="botoes__ancora"> adicionar ao carrinho</a>
+    </div>
+  </div>
+  <section class="carrosel">
+    <h2 class="carrosel__titulo">os favoritos das clientes</h2>
+    <!-- Slider main container -->
+  <div class="swiper">
+  <!-- Additional required wrapper -->
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+  
+  <div class="swiper-wrapper">
+  <!-- Slides -->
+  <div class="swiper-slide"><img src="img/1.jpeg" alt="Livro sobre portugol"></div>
+  <div class="swiper-slide"><img src="img/2.jpeg" alt="Livro sobre liderança em Design alura books"></div>
+  <div class="swiper-slide"><img src="img/3.jpeg" alt="livro sobre java script"></div>
+  <div class="swiper-slide"><img src="img/4.jpeg" alt="Livro guia front"></div>
+  <div class="swiper-slide"><img src="img/5.jpeg" alt="Livro sobre ApacheKafka"></div>
+  </div>
+
+     </section>
+     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+     <script>
+       const swiper = new Swiper('.swiper', {
+       spaceBetween: 10,
+       slidesPerView: 3,
+       pagination: {
+       el:'.swiper-pagination',
+       type: 'bullets',
+      },
+
+      });
+
+     </script>
+     
+  </body>
+
+</html>
